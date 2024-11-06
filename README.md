@@ -58,19 +58,6 @@ The dataset consists of customer product reviews with columns:
 ## Results
 
 ### Naive Bayes
-- **Accuracy**: 0.90
-- **Classification Report**:
-  | Class         | Precision | Recall | F1-Score | Support |
-|---------------|-----------|--------|----------|---------|
-| 0             | 0.85      | 0.71   | 0.77     | 4894    |
-| 1             | 0.06      | 0.00   | 0.01     | 1763    |
-| 2             | 0.91      | 0.99   | 0.95     | 29420   |
-| **Accuracy**  |           |        | 0.90     | 36077   |
-| **Macro Avg** | 0.61      | 0.57   | 0.58     | 36077   |
-| **Weighted Avg** | 0.86   | 0.90   | 0.88     | 36077   |
-
-
-### Logistic Regression
 - **Accuracy**:0.9015
 
 Classification Report:
@@ -84,21 +71,35 @@ Classification Report:
 | **Macro Avg** | 0.61      | 0.57   | 0.58     | 36077   |
 | **Weighted Avg** | 0.86   | 0.90   | 0.88     | 36077   |
 
+### Logistic Regression
+- Logistic Regression Report:
+
+| Class         | Precision | Recall | F1-Score | Support |
+|---------------|-----------|--------|----------|---------|
+| 0             | 0.85      | 0.75   | 0.80     | 4894    |
+| 1             | 0.00      | 0.00   | 0.00     | 1763    |
+| 2             | 0.92      | 0.99   | 0.95     | 29420   |
+| **Accuracy**  |           |        | 0.91     | 36077   |
+| **Macro Avg** | 0.59      | 0.58   | 0.58     | 36077   |
+| **Weighted Avg** | 0.86   | 0.91   | 0.88     | 36077   |
+
   
 
 
 ### SVM
 - **Best Parameters**: `{'C': 1, 'kernel': 'linear'}`
-- **Accuracy**: 0.91
-- **Classification Report**:
-| Metric      | Precision | Recall | F1-Score | Support |
-|------------------|-----------|--------|----------|---------|
-| Class 0          | 0.85      | 0.75   | 0.80     | 4894    |
-| Class 1          | 0.00      | 0.00   | 0.00     | 1763    |
-| Class 2          | 0.92      | 0.99   | 0.95     | 29420   |
-| **Accuracy**     |           |        | 0.91     | 36077   |
-| **Macro Avg**    | 0.59      | 0.58   | 0.58     | 36077   |
-| **Weighted Avg** | 0.86      | 0.91   | 0.88     | 36077   |
+- **Accuracy**: 0.908
+
+Classification Report:
+
+| Class         | Precision | Recall | F1-Score | Support |
+|---------------|-----------|--------|----------|---------|
+| 0             | 0.85      | 0.75   | 0.80     | 4894    |
+| 1             | 0.00      | 0.00   | 0.00     | 1763    |
+| 2             | 0.92      | 0.99   | 0.95     | 29420   |
+| **Accuracy**  |           |        | 0.91     | 36077   |
+| **Macro Avg** | 0.59      | 0.58   | 0.58     | 36077   |
+| **Weighted Avg** | 0.86   | 0.91   | 0.88     | 36077   |
 
 
 ## Usage
